@@ -1,0 +1,81 @@
+imake
+------------------------------------------
+Xorg Imake legacy build system
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  coreutils
+  xorg-cf-files-1.0.2-1
+
+Build requirements:
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
+  automake1.7-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.1-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.5-1
+  xorg-util-macros-1.0.2-1
+
+Canonical website:
+  http://xorg.freedesktop.org/
+
+Canonical download:
+  http://ftp.x.org/pub/X11R7.0/src/everything/
+
+-------------------------------------------
+
+Build instructions:
+  unpack imake-1.0.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./imake-1.0.2-X.cygport all
+
+This will create:
+  /usr/src/imake-1.0.2-X-src.tar.bz2
+  /usr/src/imake-1.0.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/ccmakedep
+  /usr/bin/cleanlinks
+  /usr/bin/imake.exe
+  /usr/bin/makeg
+  /usr/bin/mergelib
+  /usr/bin/mkdirhier
+  /usr/bin/mkhtmlindex
+  /usr/bin/revpath.exe
+  /usr/bin/xmkmf
+  /usr/share/doc/Cygwin/imake-1.0.2.README
+  /usr/share/doc/imake-1.0.2/COPYING
+  /usr/share/doc/imake-1.0.2/ChangeLog
+  /usr/share/doc/imake-1.0.2/README
+  /usr/share/man/man1/ccmakedep.1.gz
+  /usr/share/man/man1/cleanlinks.1.gz
+  /usr/share/man/man1/imake.1.gz
+  /usr/share/man/man1/makeg.1.gz
+  /usr/share/man/man1/mergelib.1.gz
+  /usr/share/man/man1/mkdirhier.1.gz
+  /usr/share/man/man1/mkhtmlindex.1.gz
+  /usr/share/man/man1/revpath.1.gz
+  /usr/share/man/man1/xmkmf.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 1.0.2-1 -----
+X11R7.1 version bump.
+
+----- version 1.0.1-1 -----
+Initial Cygwin release of modular X11R7.0.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

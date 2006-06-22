@@ -70,6 +70,10 @@ Files included in the binary package:
 
 Port Notes:
 
+----- version 1.0.2-2 -----
+Includes patch for mkdirhier given in:
+http://www.cygwin.com/ml/cygwin-xfree/2003-06/msg00374.html
+
 ----- version 1.0.2-1 -----
 X11R7.1 version bump.
 

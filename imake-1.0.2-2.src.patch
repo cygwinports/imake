@@ -1,0 +1,14 @@
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x 'Makefile.in*' -x configure -x gnome-doc-utils.make -x intltool.m4 -x omf.make -x xmldocs.make origsrc/imake-1.0.2/mkdirhier src/imake-1.0.2/mkdirhier
+--- origsrc/imake-1.0.2/mkdirhier	2003-11-14 10:48:20.000000000 -0600
++++ src/imake-1.0.2/mkdirhier	2006-06-22 01:09:16.577625000 -0500
+@@ -43,6 +43,10 @@
+ 
+ 	for filename
+ 	do
++		if [ "$filename" = '' ] ; then
++			continue
++		fi
++
+ 		path=$prefix$filename
+ 		prefix=$path/
+ 		shift

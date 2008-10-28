@@ -1,6 +1,6 @@
 imake
 ------------------------------------------
-Xorg Imake legacy build system
+X.Org Imake legacy build system
 
 Runtime requirements:
   cygwin-1.5.20-1

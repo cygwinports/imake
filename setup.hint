@@ -1,4 +1,4 @@
 category: X11 Devel
-requires: cygwin coreutils xorg-cf-files
+requires: coreutils xorg-cf-files
 sdesc: "X.Org Imake legacy build system"
 ldesc: "X.Org Imake legacy build system"

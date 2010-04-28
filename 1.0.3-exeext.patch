@@ -1,0 +1,12 @@
+--- origsrc/imake-1.0.3/Makefile.am	2010-04-15 21:57:16.000000000 -0500
++++ src/imake-1.0.3/Makefile.am	2010-04-27 17:47:16.806664400 -0500
+@@ -125,8 +125,7 @@ appman_PRE = \
+ 	mkhtmlindex.man
+ 
+ # Only need to install man pages for programs/scripts being installed
+-appman_needed_for = $(bin_PROGRAMS) $(bin_SCRIPTS)
+-appman_DATA = $(appman_needed_for:%=%.@APP_MAN_SUFFIX@)
++appman_DATA = $(bin_PROGRAMS:%$(EXEEXT)=%.@APP_MAN_SUFFIX@) $(bin_SCRIPTS:%=%.@APP_MAN_SUFFIX@)
+ 
+ EXTRA_DIST += $(appman_PRE)
+ CLEANFILES += $(appman_DATA)

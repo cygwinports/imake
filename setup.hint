@@ -1,4 +1,4 @@
 category: X11 Devel
-requires: bash binutils coreutils gcc4-core make sed xorg-cf-files
+requires: bash binutils coreutils gcc4-core make makedepend sed xorg-cf-files
 sdesc: "X.Org Imake legacy build system"
 ldesc: "X.Org Imake legacy build system"

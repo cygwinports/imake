@@ -1,0 +1,13 @@
+inherit xorg
+
+NAME="imake"
+VERSION=1.0.5
+RELEASE=1
+CATEGORY="X11 Devel"
+SUMMARY="X.Org Imake legacy build system"
+DESCRIPTION="X.Org Imake legacy build system"
+
+REQUIRES="binutils coreutils gcc-core make makedepend sed xorg-cf-files"
+
+# use the sh version of mkhtmlindex instead of the perl version
+CYGCONF_ARGS="ac_cv_prog_HAS_PERL=no"
